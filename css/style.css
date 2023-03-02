@@ -10,16 +10,17 @@
 :root {
     /* https://mycolor.space/?hex=%2371DCE4&sub=1 */
     --branco: #ffffff;
-    --color1: #71DCE4;
-    --color2: #83EDF5;
-    --color3: #00838B;
-    --color4: #005962;
-    --color5: #00333B;
+    --nav-color: #FFDDBF;
+    --color1: #E1AC79;
+    --color2: #BF8958;
+    --color3: #8F5D32;
+    --color4: #00C9AC;
+    --color5: #534439;
     --color6: #9D5B9B;
     --color7: #A03962;
-    --color8: linear-gradient(90deg, #005962 35%, #00838B 100%);
+    --color8: linear-gradient(90deg, #BF8958 35%, #E1AC79 100%);
 
-    --background-color: linear-gradient(90deg, #71dce4 35%, #3DAEB6 100%);
+    --background-color: linear-gradient(90deg, #BF8958 35%, #E1AC79 100%);
     --desenvolvimento-background-1: rgb(216, 243, 251);
     --desenvolvimento-background-2: linear-gradient(90deg, rgba(216, 243, 251, 1) 0%, rgba(131, 237, 245, 1) 99%);
 }
@@ -37,7 +38,11 @@ a:hover {
 
 .logo-imagem {
     height: 7vh;
-    border-radius: 100%;
+}
+
+.nav-texto{
+    color: var(--color5);
+    font-size: larger;
 }
 
 .logo {
@@ -48,7 +53,7 @@ a:hover {
 }
 
 .logo-texto {
-    color: var(--branco);
+    color: var(--color5);
     letter-spacing: 4px;
     margin-left: 4px;
 }
@@ -57,10 +62,11 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 10vh;
     font-size: 120%;
-    background: rgba(255, 255, 255, 0.18);
+    
+    background: var(--nav-color);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.8px);
 }
@@ -170,33 +176,33 @@ body {
 }
 
 .apresentacao-textual-titulo {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-    font-size: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10px;
+    font-size: 6vh;
     color: #fff;
     text-align: center;
 }
 
 .apresentacao-textual-texto {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2vh;
     color: #fff;
     text-align: center;
 }
 
 .apresentacao-textual-botao {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 1.3em 3em;
-    font-size: 12px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
+    font-weight: 10px;
+    color: var(--color5);
+    background-color: var(--branco);
     border: none;
     border-radius: 45px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: var(--color5) 0px 20px 30px -10px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -206,7 +212,7 @@ body {
 }
 
 apresentacao-textual-botao:hover {
-    background-color: #23c483;
+    background-color: var(--color4);
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
@@ -249,7 +255,7 @@ ion-icon {
 .sobre {
     display: flex;
     flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--branco);
     font-weight: 300;
     font-size: 24px;
