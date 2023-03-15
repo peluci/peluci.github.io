@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,17 +11,17 @@
 :root {
     /* https://mycolor.space/?hex=%2371DCE4&sub=1 */
     --branco: #ffffff;
-    --nav-color: #FFDDBF;
-    --color1: #E1AC79;
+    --nav-color: #2F6673;
+    --color1: #2F6673;;
     --color2: #BF8958;
     --color3: #8F5D32;
     --color4: #00C9AC;
     --color5: #534439;
     --color6: #9D5B9B;
     --color7: #A03962;
-    --color8: linear-gradient(90deg, #BF8958 35%, #E1AC79 100%);
+    --color8: linear-gradient(90deg, #6D36B5 35%, #1D3899 100%);
 
-    --background-color: linear-gradient(90deg, #BF8958 35%, #E1AC79 100%);
+    --background-color: linear-gradient(75.23deg, #2F6673 5.53%, #1493AF 67.94%);
     --desenvolvimento-background-1: rgb(216, 243, 251);
     --desenvolvimento-background-2: linear-gradient(90deg, rgba(216, 243, 251, 1) 0%, rgba(131, 237, 245, 1) 99%);
 }
@@ -41,7 +42,7 @@ a:hover {
 }
 
 .nav-texto{
-    color: var(--color5);
+    color: var(--color1);
     font-size: larger;
 }
 
@@ -53,7 +54,7 @@ a:hover {
 }
 
 .logo-texto {
-    color: var(--color5);
+    color: var(--branco);
     letter-spacing: 4px;
     margin-left: 4px;
 }
@@ -62,13 +63,14 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     height: 10vh;
-    font-size: 120%;
+    font-size: 20pt;
     
-    background: var(--nav-color);
+    background: var(--branco);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.8px);
+    stroke: var(--color5);
 }
 
 .nav-list {
@@ -176,7 +178,7 @@ body {
 }
 
 .apresentacao-textual-titulo {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 10px;
     font-size: 6vh;
     color: #fff;
@@ -184,17 +186,19 @@ body {
 }
 
 .apresentacao-textual-texto {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 100;
-    font-size: 2vh;
+    font-size: 30px;
+    padding-left: 17%;
+    padding-right: 17%;
     color: #fff;
     text-align: center;
 }
 
 .apresentacao-textual-botao {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     padding: 1.3em 3em;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 10px;
@@ -248,17 +252,17 @@ p {
 }
 
 ion-icon {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 
 .sobre {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat, sans-serif;
     color: var(--branco);
     font-weight: 300;
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -306,7 +310,7 @@ ion-icon {
 
 
 .bloco-texto {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
     margin: 10px;
     color: #005962;
@@ -323,6 +327,7 @@ ion-icon {
 }
 
 .sobre-titulo {
+    font-family: 'Red Hat Display', sans-serif;
     font-size: 48px;
     letter-spacing: 4px;
     text-transform: uppercase;
