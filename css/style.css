@@ -86,6 +86,7 @@ nav {
 }
 
 .mobile-menu {
+    visibility: hidden;
     display: none;
     cursor: pointer;
 }
@@ -101,7 +102,6 @@ nav {
     body {
         overflow-x: hidden;
     }
-
     .nav-list {
         position: absolute;
         top: 8vh;
@@ -123,6 +123,10 @@ nav {
 
     .mobile-menu {
         display: block;
+    }
+
+    .imagem-principal{
+        display: none;
     }
 }
 
@@ -159,6 +163,7 @@ body {
     font-size: 100%;
     background: var(--color1);
     background: var(--background-color);
+    background-attachment: fixed; /*edit*/
 }
 
 .apresentacao {
@@ -198,6 +203,8 @@ body {
     text-align: center;
 }
 
+
+
 .apresentacao-textual-botao {
     font-family: 'Red Hat Display', sans-serif;
     padding: 1.3em 3em;
@@ -205,11 +212,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 10px;
-    color: var(--color5);
+    color: var(--color1);
     background-color: var(--branco);
     border: none;
     border-radius: 45px;
-    box-shadow: var(--color5) 0px 20px 30px -10px;
+    box-shadow: var(--color5) 0px 10px 30px -10px;
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
@@ -218,14 +225,14 @@ body {
 
 }
 
-apresentacao-textual-botao:hover {
-    background-color: var(--color4);
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-    color: #fff;
-    transform: translateY(-7px);
+.apresentacao-textual-botao:hover {
+    color: var(--color2);
+    transform: scale(1.01);
+    transition: 500ms;
+
 }
 
-apresentacao-textual-botao:active {
+.apresentacao-textual-botao:active {
     transform: translateY(-1px);
 }
 
@@ -437,3 +444,51 @@ ion-icon {
     width: 100%;
     text-align: center;
   }
+.about{
+    color: var(--branco);
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.about-academic-background-paragraph{
+    font-family: 'Montserrat', sans-serif;
+}
+.section-title{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 48px;
+}
+.title{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 36px;
+}
+.subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.paragraph{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+.academic-bg-div{
+    display: flex;
+    align-items: top;
+}
+
+.academic-background-right{
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.image{
+    height: 200px;
+    padding: 10%;
+}
+.image:hover{
+    transform: scale(1.01);
+    transition: 500ms;
+
+}
