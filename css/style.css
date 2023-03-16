@@ -430,3 +430,10 @@ ion-icon {
 .seta{
     height: 75px;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 25pt;
+    width: 100%;
+    text-align: center;
+  }
