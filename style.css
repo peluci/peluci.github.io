@@ -35,6 +35,7 @@ body {
     background: var(--color1);
     background: var(--background-color);
     background-attachment: fixed;
+    overflow: hidden;
     /*edit*/
 }
 
