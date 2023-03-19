@@ -188,6 +188,17 @@ nav {
     .nav-text-current {
         visibility: hidden;
     }
+    .nav-list {
+        visibility: hidden;
+    }
+    .logo-image{
+        position: absolute;
+        top: 15%;
+        left: 40vw;
+        visibility: visible;
+        color: var();
+    }
+    
 }
 
 body {
@@ -285,6 +296,12 @@ ion-icon {
 
 .onedrive {
     width: 100%;
+}
+
+.onedrive iframe {
+    width: 100%;
+    height: 929vh;
+    
 }
 
 .resume-page {
