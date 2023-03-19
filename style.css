@@ -166,7 +166,6 @@ nav {
     body {
         overflow-x: hidden;
     }
-
     .home {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -198,7 +197,6 @@ nav {
         visibility: visible;
         color: var();
     }
-    
 }
 
 body {
@@ -209,7 +207,6 @@ body {
     background-attachment: fixed;
     /*edit*/
 }
-
 
 p {
     display: block;
