@@ -179,6 +179,12 @@ nav {
         width: 150px;
         height: 150px;
     }
+    .home h1{
+        font-size: 32px;
+    }
+    .home p{
+        font-size: 24px;
+    }
 
     .home button {
         visibility: hidden;
