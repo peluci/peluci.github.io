@@ -214,6 +214,11 @@ ion-icon {
 
 }
 
+.about p {
+    padding-right: 15%;
+    
+}
+
 .about img {
     height: 200px;
     padding: 10%;
